@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import logoAl from "../../assets/logo.Al.png";  // 👈 ADICIONADO - Vite cuida do resto!
+
 
 const EyeIcon = ({ className = "h-5 w-5" }) => (
   <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -81,7 +83,8 @@ const Login = () => {
       <div className="w-full max-w-md space-y-8">
         <div className="text-center">
           <div className="mx-auto h-28 w-28 bg-white rounded-md flex items-center justify-center mb-6 shadow-md border border-sky-200 transition-transform duration-200 hover:scale-105">
-            <img src="/src/assets/logo.Al.png" alt="Logo" className="h-20 w-20 object-contain" />
+            {/* 👇 MUDANÇA: /src/assets/ → {logoAl} */}
+            <img src={logoAl} alt="Logo" className="h-20 w-20 object-contain" />
           </div>
           <h2 className="text-xl font-semibold text-slate-900">Africa Legal · Acesso</h2>
           <p className="text-xs text-slate-500 mt-1">Entre para aceder ao painel de gestão</p>

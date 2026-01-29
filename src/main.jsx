@@ -6,10 +6,8 @@ import App from "./App.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/AfricaLegal1.0.1">
       <App />
     </BrowserRouter>
   </StrictMode>
 );
-
-
